@@ -1,6 +1,6 @@
 {
   "name": "textract",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "homepage": "https://github.com/dbashford/textract",
   "author": "David Bashford",
   "description": "Extracting text from files of various type including html, pdf, doc, docx, xls, xlsx, csv, pptx, png, jpg, gif, rtf, text/*, and various open office.",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbashford/textract"
+    "url": "git+https://github.com/dbashford/textract.git"
   },
   "keywords": [
     "textract",
@@ -72,15 +72,15 @@
     "mocha": "1.9.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha",
-    "lint": "node_modules/.bin/eslint -c .eslintrc.json lib"
+    "test": "mocha",
+    "lint": "eslint -c .eslintrc.json lib"
   },
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
   },
   "bin": {
-    "textract": "./bin/textract"
+    "textract": "bin/textract"
   },
   "main": "./lib/index"
 }
